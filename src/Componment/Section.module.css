@@ -31,23 +31,60 @@ div.main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh; /* 화면 중앙에 배치 */
-    margin: 0px;
+    height: 80vh;
+     /* 화면 중앙에 배치 */
     background-color: #f0f0f0; /* 배경색 */
   }
   div.main2{
     background-color: rgb(243, 255, 203);
-    width: 100%;
-    height: 100%;
+    height: 80vh;
   }
   div.main3{
     background-color: rgb(255, 226, 252);
-    width: 100%;
-    height: 100%;
+    height: 80vh;
   }
-  div.footer{
+  div.main4{
+    background-color: rgb(238, 226, 255);
+    height: 80vh;
+  }
+  .footer{
     background-color:#000;
+    position: fixed;
+    bottom: 0px;
     color: #fff;
     width: 100%;
-    height: 100%;
+    height: 5vh;
   }
+
+  .header{
+    background-color: rgb(5, 5, 5);
+    width: 100%;
+    height: 15vh;
+  }
+  .header .logo{
+    display: inline-block;
+    width: 30%;
+  }
+  .header .menu{
+    display: inline-block;
+    width: 70%;
+  }
+  .header .menu .link{
+    display: inline-block;
+    color: white;
+    border-left: 3px solid #fff;
+    padding: 0px 50px 0px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .header .menu .link:hover{color :pink}
+
+  .header .logo .home{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 4em;
+    font-weight: bold;
+    font: x-large;
+  }
+  .header .logo .home:hover {color :pink}

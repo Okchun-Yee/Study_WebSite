@@ -5,7 +5,7 @@ import styles from "./Section.module.css";
 function Footer() {
     return (
         <div className={styles.footer}>
-            <h2>Discord</h2>
+            <h2>Footer</h2>
         </div>
     );
 }

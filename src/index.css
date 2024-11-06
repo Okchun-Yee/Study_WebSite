@@ -11,31 +11,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.header{
-  background-color: rgb(5, 5, 5);
-  width: 100%;
-  height: 100px;
-}
-.header .logo{
-  color: white;
-  text-decoration: none;
-  font-size: 4em;
-  font-weight: bold;
-  font: x-large;
-  margin-right: 300px;
-}
-.header .logo:hover{  color: pink;}
-
-.header .link {
-  border-left: 3px solid #fff;
-  padding-left: 30px;
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
-}
-.header .link:hover{ color : pink;}
-
-ul li {
-  display: inline;
+h2{
+  margin:  0px
 }
