@@ -4,8 +4,10 @@ import styles from "./Section.module.css";
 
 function Discord() {
     return (
-        <div className={styles.main4}>
-            <h2>Discord</h2>
+        <div className={styles.main2}>
+            <div className={styles.comments}>
+                <h2>Discord</h2>
+            </div>
         </div>
     );
 }

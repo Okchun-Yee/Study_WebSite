@@ -1,0 +1,21 @@
+{
+    "articles": [
+      {
+        "title": "이원진이 올린 코드",
+        "filePath": "/path/to/javascript-introduction.md"
+      },
+      {
+        "title": "윤재상이 올린 코드",
+        "filePath": "/path/to/react-basics.md"
+      },
+      {
+        "title": "각자 사람들이 올린 코드를 누르면 해당 글로 이동.",
+        "filePath": "/path/to/css-styling-guide.md"
+      },
+      {
+        "title": "할 예정 아직 못함",
+        "filePath": "/path/to/css-styling-guide.md"
+      }
+    ]
+  }
+  
