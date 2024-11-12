@@ -2,19 +2,19 @@
     "articles": [
       {
         "title": "이원진이 올린 코드",
-        "filePath": "/path/to/javascript-introduction.md"
+        "filePath": "./database_01"
       },
       {
         "title": "윤재상이 올린 코드",
-        "filePath": "/path/to/react-basics.md"
+        "filePath": "./database_02"
       },
       {
         "title": "각자 사람들이 올린 코드를 누르면 해당 글로 이동.",
-        "filePath": "/path/to/css-styling-guide.md"
+        "filePath": "./database_03"
       },
       {
         "title": "할 예정 아직 못함",
-        "filePath": "/path/to/css-styling-guide.md"
+        "filePath": "./database_04"
       }
     ]
   }

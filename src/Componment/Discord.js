@@ -11,5 +11,4 @@ function Discord() {
         </div>
     );
 }
-
 export default Discord;

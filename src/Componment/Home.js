@@ -16,5 +16,4 @@ function Main_Section() {
         </div>
     );
 }
-
 export default Main_Section;

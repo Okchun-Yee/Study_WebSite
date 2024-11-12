@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import SharedData from './DB/Shared_DB.json';
 import styles from "./Section.module.css";
 import MainSectionWrite from './Shared_ch/mainSection_write';
@@ -21,7 +22,7 @@ function Shared() {
                 {/* isWrite가 false일 때만 데이터 목록 표시 */}
                 {showData && SharedData.articles.map((article, index) => (
                     <div key={index} className={styles.articleItem}>
-                        <h3>{article.title}</h3>
+                        <Link to={article.filePath} className={styles.database}><h3>{article.title}</h3></Link>
                         <hr/>
                     </div>
                 ))}
@@ -31,11 +32,10 @@ function Shared() {
                     Write
                 </button>
                 {/* isWrite가 true일 때만 MainSectionWrite 컴포넌트 표시 */}
-                {isWrite && <MainSectionWrite />}
+                {isWrite && <MainSectionWrite />}   {/*동적 생성이라는데.. */}
             </div>
             <Comments />
         </div>
     );
 }
-
 export default Shared;

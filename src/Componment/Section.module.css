@@ -79,7 +79,8 @@ hr {
 }
 
 .header .menu .link:hover {
-  color: pink
+  color: pink;
+  transform: scale(1.1);
 }
 
 .header .logo .home {
@@ -92,7 +93,7 @@ hr {
 }
 
 .header .logo .home:hover {
-  color: pink
+  color: pink;
 }
 
 div.main {
@@ -155,7 +156,13 @@ img.comm_button:hover{
 .articleItem {
   padding: 5px;
 }
-
+.database{
+  text-decoration: none;
+  font-size :1em;
+}
+.database:hover{
+  font-size: 1.1em;
+}
 button.writeButton{
   position: absolute;
   bottom: 50px;
