@@ -22,7 +22,10 @@ function Shared() {
                 {/* isWrite가 false일 때만 데이터 목록 표시 */}
                 {showData && SharedData.articles.map((article, index) => (
                     <div key={index} className={styles.articleItem}>
-                        <Link to={article.filePath} className={styles.database}><h3>{article.title}</h3></Link>
+                        <Link 
+                            to={article.filePath} 
+                            className={styles.database}
+                            target='_blank'><h4>{article.title}</h4></Link>
                         <hr/>
                     </div>
                 ))}
