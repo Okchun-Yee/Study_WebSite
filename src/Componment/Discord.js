@@ -22,11 +22,11 @@ function Discord() {
     const homework = () => {
         switch (activeHomework) {
             case 1:
-                return <div  className={styles.homeWorkPage}>{activeHomework && <ToDoList />}</div>;
+                return <div className={styles.homeWorkPage}>{activeHomework && <ToDoList />}</div>;
             case 2:
-                return <div  className={styles.homeWorkPage}>{activeHomework && <Second />}</div>;
+                return <div className={styles.homeWorkPage}>{activeHomework && <Second />}</div>;
             case 3:
-                return <div  className={styles.homeWorkPage}>{activeHomework && <Thrid />}</div>;
+                return <div className={styles.homeWorkPage}>{activeHomework && <Thrid />}</div>;
             default:
                 return null; // 아무것도 표시하지 않음
         }
@@ -36,10 +36,16 @@ function Discord() {
         setIsWrite((prev) => !prev);  // 버튼 클릭 시 상태 변경 (mainSection_write 컴포넌트 표시)
     }
     const hoverBgColor = "#f2f2f2";  //마우스 올리면 나오는 Nav 배경색
-    const defaultBgColor = "#fff";    //기본 Nav 배경색
+    const defaultBgColor = "transparent";    //기본 Nav 배경색
 
     return (
         <div className={styles.main2}>
+            <button
+                className={styles.calCloseBtn}
+                onClick={() => { handleWriteClick(); }}>
+                {isWrite ? "Hide" : "Cal"} {/* 버튼 텍스트를 상태에 따라 변경 */}
+            </button>
+            {isWrite && <Calculator />}
             <div
                 className={styles.leftNav}
                 style={getContentStyle(isHovered, { hoverBgColor, defaultBgColor })}
@@ -77,12 +83,6 @@ function Discord() {
                     </tr>
                 </table>
             </div>
-            <button
-                className={styles.calCloseBtn}
-                onClick={() => { handleWriteClick(); }}>
-                {isWrite ? "Hide" : "Cal"} {/* 버튼 텍스트를 상태에 따라 변경 */}
-            </button>
-            {isWrite && <Calculator />}
             {homework()}
         </div>
     );

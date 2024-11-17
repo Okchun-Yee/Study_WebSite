@@ -27,7 +27,7 @@ function Comments() {
             <div 
                 className={styles.part2}
                 onClick={handleClick} 
-                style={{ backgroundColor: isActive ? 'lightblue' : '#fff' }}>
+                style={{ backgroundColor: isActive ? 'lightblue' : 'transparent' }}>
                 {message && <h3>{message}</h3>}  {/* message가 있으면 'hello' 출력 */}
             </div>
         </div>

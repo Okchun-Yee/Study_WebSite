@@ -61,7 +61,7 @@ hr.inside{
 }
 
 .header {
-  background-color: #fff;
+  /* background-color: #fff; */
   border-bottom: 3px solid black;
   width: 100%;
   height: 15vh;
@@ -105,7 +105,6 @@ hr.inside{
 }
 
 div.main {
-  background-color: #fff;
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
@@ -113,8 +112,12 @@ div.main {
   height: 80vh;
 }
 
+
 div.main2 {
-  background-color: #fff;
+  background-image: url('./img/5523744.jpg'); /* 배경 이미지 설정 */
+  background-size: cover; /* 이미지가 화면을 꽉 채우도록 설정 */
+  background-position: center; /* 이미지 중앙 정렬 */
+  z-index: -1;            /* 배경 이미지가 다른 콘텐츠 뒤에 위치하도록 설정 */
   width: 100%;
   height: 100vh;
   display: flex;
@@ -123,8 +126,7 @@ div.main2 {
 }
 
 div.mainSection {
-  background-color: #fff;
-  width: 70%;
+  width: 85%;
   height: 100%;
   border-left: 3px solid #f2f2f2;
   border-right: 3px solid #f2f2f2;
@@ -133,7 +135,7 @@ div.mainSection {
 }
 
 div.comm {
-  background-color: #fff;
+  background-color: transparent;
   width: 15%;
   height: 100%;
   box-sizing: border-box;
@@ -204,6 +206,7 @@ div.textBoxDiv{
   height: 100vh;  
 }
 input.textbox {
+  background-color: transparent;
   width: 95%;
   height: 80vh;             /* 높이 80% */
   margin: 0 auto;           /* 가로 중앙 정렬 */
@@ -211,6 +214,7 @@ input.textbox {
   border: none;   
 }
 input.titleTextBox{
+  background-color: transparent;
   width: 95%;
   height: 10vh;
   margin: 0 auto; 
@@ -263,7 +267,7 @@ button.navMenuBtn{
   width: 100%;
   height: 3em;
   border: 3px solid #5f5f5f;
-  color: #5f5f5f;
+  color: #000;
   border-radius: 20px;
   cursor: pointer;  
 }
@@ -283,7 +287,7 @@ div.homeWorkPage{
   height: 1em;
   border: none;
   margin-right: 10px;
-  background-color: #f2f2f2;
+  background-color: #fff;
   color: #000;
   border-radius: 20px;
   /* 왼쪽 모서리 둥글게 */
@@ -295,7 +299,7 @@ div.homeWorkPage{
 .plusBtn {
   padding: 10px 20px;
   border: none;
-  background-color: #f2f2f2;
+  background-color: #fff;
   color: #000;
   border-radius: 20px;
   cursor: pointer;
@@ -328,8 +332,8 @@ input[type="checkbox"]:checked + label {
 /*Calaulator StyleShert*/
 div.calculator_body{
   position: absolute;
-  top :200px;
-  left : 300px;
+  top :230px;
+  right: 300px;
   width: 300px;
   height: 400px;
   border: 1px solid transparent;

@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import SharedData from './DB/Shared_DB.json';
 import styles from "./Section.module.css";
 import MainSectionWrite from './SharedPage/mainSection_write';
-import Nav from './SharedPage/nav';
 import Comments from './SharedPage/Right_Comments';
 
 function Shared() {
@@ -17,7 +16,6 @@ function Shared() {
 
     return (
         <div className={styles.main2}>
-            <Nav />
             <div className={styles.mainSection}>
                 {/* isWrite가 false일 때만 데이터 목록 표시 */}
                 {showData && SharedData.articles.map((article, index) => (
