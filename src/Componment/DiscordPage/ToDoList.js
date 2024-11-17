@@ -26,11 +26,15 @@ function ToDoList() {
         setToDoItems(updatedItems); // 상태 업데이트
     };
 
+    const isCheckedDelete = () => {
+        setToDoItems(toDoItems.filter(item => !item.isChecked));
+    }
+
     return (
         <div style={{ width: '100%' }}>
             <h2>Weekend To-Do List</h2>
             <hr className={styles.inside} />
-            <div>
+            <div onKeyDown={(e) => {if (e.key === "Enter") {handleAdd();}}}>
                 <input
                     type="text"
                     className={styles.inputList}
@@ -50,6 +54,7 @@ function ToDoList() {
                                     <input
                                         type="checkbox"
                                         id={`task${index}`}
+                                        className={styles.customCheckbox}
                                         checked={item.isChecked} // 항목별 체크 상태 반영
                                         onChange={() => handleCheckboxChange(index)} // 개별 항목의 체크 상태 변경
                                     />
@@ -60,8 +65,15 @@ function ToDoList() {
                                     </label>
                                 </td>
                                 <td className={styles.listBtn}>
-                                    <button onClick={() => handleDelete(index)}>X</button>
+                                    <button className={styles.checkBox} onClick={() => handleDelete(index)}>X</button>
                                 </td>
+                                {index === 0 && (
+                                    <td className={styles.listTdBtn} >
+                                        <button className={styles.checkBox} onClick={() => isCheckedDelete()}>
+                                            Delete
+                                        </button>
+                                    </td>
+                                )}
                             </tr>
                         </table>
                     </div>

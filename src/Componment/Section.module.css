@@ -58,6 +58,7 @@ hr.inside{
   color: black;
   width: 100%;
   height: 5vh;
+  z-index: 2;
 }
 
 .header {
@@ -233,6 +234,7 @@ div.leftNav{
   display: flex;
   justify-content: center; /* 수평 정렬 */
   align-items: center; /* 수직 정렬 */
+  z-index: 1;
 }
 button.navCloseBtn{
   position: absolute;
@@ -305,6 +307,7 @@ div.homeWorkPage{
   cursor: pointer;
   /* 마우스 포인터 변경 */
   box-sizing: border-box;
+  font-size: 1em;
 }
 .plusBtn:hover {
   background-color: #474747;
@@ -315,18 +318,56 @@ table.listTable{
   left:150px;
   table-layout: fixed; /* 테이블 레이아웃 고정 */
   width: 668px;
-  border-bottom: 2px solid #afafaf;
 }
 td.listBtn{
   width: 20px;
+  padding-right: 18px;
 }
 td.listTd{
-  width: 628px;
-  margin : 0px;
+  width: 580px;
   text-align: left;
+  margin: 0px;
+  border-bottom: 2px solid #afafaf;
+}
+td.listTdBtn{
+  width: 30px;
+  text-align: center;
 }
 input[type="checkbox"]:checked + label {
     text-decoration: line-through; /* 체크박스를 클릭하면 줄을 긋기 */
+}
+
+.customCheckbox {
+  /* 기본 스타일 */
+  appearance: none; /* 기본 체크박스 스타일 제거 */
+  -webkit-appearance: none; /* 크롬 등 브라우저 호환성 */
+  width: 20px; /* 체크박스 너비 */
+  height: 20px; /* 체크박스 높이 */
+  border: 2px solid #5f5f5f; /* 외곽선 */
+  background-color: white; /* 내부 배경색 */
+  border-radius: 2px; /* 각지게 */
+  cursor: pointer; /* 커서 모양 변경 */
+
+  /* 전환 효과 */
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.customCheckbox:checked {
+  background-color: #5f5f5f; /* 선택 시 내부 배경색 */
+  border-color: #5f5f5f; /* 선택 시 외곽선 색 */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M6 10l-3-3 1-1 2 2 5-5 1 1-6 6z'/%3E%3C/svg%3E");
+  background-size: 12px 12px; /* 체크 아이콘 크기 */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+button.checkBox{
+  border-radius: 50px;
+  cursor: pointer;
+}
+.checkBox:hover{
+  background-color: #2f2f2f;
+  color: #fff;
 }
 
 /*Calaulator StyleShert*/
