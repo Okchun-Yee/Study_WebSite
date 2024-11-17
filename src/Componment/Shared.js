@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SharedData from './DB/Shared_DB.json';
 import styles from "./Section.module.css";
-import MainSectionWrite from './Shared_ch/mainSection_write';
-import Nav from './Shared_ch/nav';
-import Comments from './Shared_ch/Right_Comments';
+import MainSectionWrite from './SharedPage/mainSection_write';
+import Nav from './SharedPage/nav';
+import Comments from './SharedPage/Right_Comments';
 
 function Shared() {
     const [isWrite, setIsWrite] = useState(false);  // 상태로 컴포넌트 변경 여부 관리

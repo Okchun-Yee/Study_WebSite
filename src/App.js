@@ -11,14 +11,14 @@ import Todaystudy from './Componment/Todaystudy';
 function App() {
   return (
     <BrowserRouter>
-      <div>
+      <div style={{ position: 'relative'}}>
         <Header />
         {/* 라우트 설정을 App.js로 이동 */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Todaystudy" element={<Todaystudy />} />
-          <Route path="/Shared" element={<Shared />}/>
-          <Route path="/Discord" element={<Discord />}/>
+          <Route path="/Shared" element={<Shared />} />
+          <Route path="/Discord" element={<Discord />} />
         </Routes>
 
         <Footer />
